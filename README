@@ -1,1 +1,27 @@
-Please see http://mozillalabs.com/blog/2011/04/protecting-users-from-an-age-old-threat/
+Every year on April 1st, people all over the web implement jokes and pranks on their websites. Generally these are
+supposed to be funny, but we don't all share the same sense of humor. Some of these jokes are genuinely amusing;
+others can be irritating, frustrating, or even make us angry.
+
+There's no reason that those who enjoy pranks can't have fun with this day while still respecting the wishes of
+those who don't want to bother with the whole thing. With Mozilla Labs' experimental "Do Not Fool" HTTP request
+header, we can achieve harmony.
+
+By encouraging the widespread adoption of the DNF header by April Fools prank authors, I hope to make April Fools
+day on the web once again enjoyable for everyone.
+
+For background, please see http://mozillalabs.com/blog/2011/04/protecting-users-from-an-age-old-threat/
+
+
+Please contribute!
+
+If you are familiar with a web development language, platform, or framework not represented here, please take a
+few minutes to contribute. Anything from a code snippet to a full-fledged library is welcome.
+
+If you're not sure what to do, it's simple: your code merely needs to check if the HTTP request contains a header
+with the name "DNF". If it does and the value of that header is "1", the visitor doesn't want to see April Fools
+jokes. If the value is "0", or the header doesn't exist, then feel free to present the joke.
+
+
+Thanks,
+Ryan Freebern <ryan@freebern.org>
+
