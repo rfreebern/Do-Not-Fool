@@ -1,0 +1,10 @@
+Both of these files will only work when PHP is being run as a module loaded by your webserver; otherwise, PHP doesn't have
+access to the request headers. See http://www.php.net/manual/en/function.apache-request-headers.php#74592 for information
+on getting access to specific headers when running PHP via CGI.
+
+aprilfools.php:
+A full class implementation of DNF header checking, including public static methods testing if users have explicitly or
+implicitly opted in or out of April Fools jokes. Licensed under Creative Commons Attribution 3.0 to simplify integration.
+
+do-not-fool.php:
+An extremely minimal implementation, designed to be easy to hide in existing code.
