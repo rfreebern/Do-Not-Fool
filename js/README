@@ -1,0 +1,8 @@
+April Fools pranks that are entirely javascript can't read the request headers, and therefore will be inflicted on those
+who don't want to see them. The greasemonkey user script here sets a window-level variable, window.__DNF, which scripts
+on the page can check. If it's set to 1, the script should abort without executing the joke.
+
+Ideally, the greasemonkey script could read the preference set by the Do Not Fool extension; unfortunately, greasemonkey
+scripts only have access to the preferences they've set themselves. This is obviously not the best solution, but is
+provided merely as a starting point for discussion of this issue.
+
