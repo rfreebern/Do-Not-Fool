@@ -32,17 +32,17 @@ class AprilFools {
 	}
 	
 	// userOptsIn
-	// Returns true only if user has sent DNF header with value 1; false otherwise.
+	// Returns true only if user has sent DNF header with value 0 ("fool me"); false otherwise.
 	public static function userOptsIn () {
 		$dnf = AprilFools::DNFHeaderValue();
-		return !is_null($dnf) and $dnf == 1;
+		return !is_null($dnf) and $dnf == 0;
 	}
 	
 	// userOptsOut
-	// Returns true only if user has sent DNF header wth value 0; false otherwise.
+	// Returns true only if user has sent DNF header wth value 1 ("do not fool me"); false otherwise.
 	public static function userOptsOut () {
 		$dnf = AprilFools::DNFHeaderValue();
-		return !is_null($dnf) and $dnf == 0;
+		return !is_null($dnf) and $dnf == 1;
 	}
 	
 	private static function DNFHeaderValue () {

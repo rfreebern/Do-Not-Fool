@@ -37,10 +37,10 @@ class AprilFools():
 	@staticmethod
 	def userOptsIn():
 		dnf = web.ctx.env.get('HTTP_DNF')
-		return dnf == 1
+		return dnf == 0
 
 	@staticmethod
 	def userOptsOut():
 		dnf = web.ctx.env.get('HTTP_DNF')
-		return dnf == 0
+		return dnf == 1
 		
